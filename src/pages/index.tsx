@@ -3,6 +3,7 @@ import { Inter } from "@next/font/google";
 import Head from "next/head";
 import Image from "next/image";
 import FinanceCard from "./FinanceCard";
+import PieChart from "./PieChart";
 
 import testData from "./TestData.json";
 
@@ -15,11 +16,6 @@ interface finItem {
 }
 
 export default function Home() {
-  testData.forEach((item) => {
-    console.log(item);
-    console.log("-----");
-  });
-
   return (
     <>
       <Head>
@@ -28,11 +24,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-[#09051b] grid grid-rows-6 grid-flow-col gap-4 justify-center  items-center w-screen h-screen">
-        {testData.map((testData, i) => (
-          <FinanceCard key={i} finItem={testData} />
-        ))}
-      </main>
+      <div className="bg-[#605e69] flex flex-col justify-center  items-center w-screen h-screen">
+        <PieChart testData={testData} />
+        <main className="bg-[#09051b] grid grid-rows-6 grid-flow-col gap-4 justify-center  items-center w-screen h-screen">
+          {testData.map((testItem, i) => (
+            <FinanceCard key={i} finItem={testItem} />
+          ))}
+        </main>
+      </div>
     </>
   );
 }
