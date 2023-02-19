@@ -28,7 +28,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-[#09051b] flex-col justify-center flex items-center w-screen h-screen space-y-4">
+      <main className="bg-[#09051b] grid grid-rows-6 grid-flow-col gap-4 justify-center  items-center w-screen h-screen">
         {testData.map((testData, i) => (
           <FinanceCard key={i} finItem={testData} />
         ))}
