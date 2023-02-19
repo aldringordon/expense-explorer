@@ -28,6 +28,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="bg-[#241e2b] flex flex-col justify-center  items-center w-screen h-screen">
+        <div className="absolute top-[100px]">
+          <p className="text-[3rem] font-light">Expense Explorer</p>
+          <p className="text-base font-light">By Aldrin Gordon</p>
+        </div>
         <div className="flex flex-col justify-center  items-center w-[700px] h-[650px]">
           <PieChart testData={testDataSummarised} />
         </div>

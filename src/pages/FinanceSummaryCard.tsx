@@ -28,7 +28,7 @@ function FinanceCard(props: any) {
   if (finItem.Type === "Liabilities") {
     return (
       <div
-        className="bg-[#9c7d3a7c]
+        className="bg-[#9b772991]
               flex-col justify-center flex items-center flex-shrink-0 rounded-lg
               w-[120px] h-[80px]"
       >
