@@ -3,15 +3,15 @@
         "Name": "Salary",
         "Type": "Income",
         "Subtype": "Salary",
-        "Amount": 2320,
-        "Frequency": "Fortnightly"
+        "Amount": 4640,
+        "Frequency": "Monthly"
     },
     {
         "Name": "Rent",
         "Type": "Expense",
         "Subtype": "Rent",
-        "Amount": 170,
-        "Frequency": "Weekly"
+        "Amount": 680,
+        "Frequency": "Monthly"
     },
     {
         "Name": "RAC",
@@ -31,8 +31,8 @@
         "Name": "CBHS",
         "Type": "Expense",
         "Subtype": "Insurance",
-        "Amount": 55,
-        "Frequency": "Weekly"
+        "Amount": 238.33,
+        "Frequency": "Monthly"
     },
     {
         "Name": "Car",
@@ -80,15 +80,15 @@
         "Name": "Food",
         "Type": "Expense",
         "Subtype": "Food",
-        "Amount": 150,
-        "Frequency": "Weekly"
+        "Amount": 650,
+        "Frequency": "Monthly"
     },
     {
         "Name": "Petrol",
         "Type": "Expense",
         "Subtype": "Petrol",
-        "Amount": 100,
-        "Frequency": "Weekly"
+        "Amount": 433.33,
+        "Frequency": "Monthly"
     },
     {
         "Name": "Subscriptions",
@@ -108,14 +108,14 @@
         "Name": "DFAT",
         "Type": "Liability",
         "Subtype": "Loan",
-        "Amount": 100,
-        "Frequency": "Fortnightly"
+        "Amount": 216.67,
+        "Frequency": "Monthly"
     },
     {
         "Name": "PL",
         "Type": "Liability",
         "Subtype": "Loan",
-        "Amount": 173.26,
-        "Frequency": "Fortnightly"
+        "Amount": 375,
+        "Frequency": "Monthly"
     }
 ]

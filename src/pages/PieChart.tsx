@@ -1,4 +1,5 @@
 import { ResponsivePie } from "@nivo/pie";
+import FinanceSummaryCard from "./FinanceSummaryCard";
 
 function PieChart(props: any) {
   const testData = props.testData;
@@ -31,6 +32,10 @@ function PieChart(props: any) {
       arcLabelsTextColor={{
         from: "color",
         modifiers: [["darker", 2]],
+      }}
+      tooltip={(input) => {
+        console.log(input);
+        return <FinanceSummaryCard finItem={input.datum.data} />;
       }}
       defs={[
         {

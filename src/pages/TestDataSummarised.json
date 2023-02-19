@@ -1,0 +1,14 @@
+[
+    {
+        "Type": "Income",
+        "Amount": 4640
+    },
+    {
+        "Type": "Expense",
+        "Amount": 1338.33
+    },
+    {
+        "Type": "Liability",
+        "Amount": 591.67
+    }
+]

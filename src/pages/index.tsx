@@ -6,6 +6,7 @@ import FinanceCard from "./FinanceCard";
 import PieChart from "./PieChart";
 
 import testData from "./TestData.json";
+import testDataSummarised from "./TestDataSummarised.json";
 
 interface finItem {
   Name: string;
@@ -16,6 +17,8 @@ interface finItem {
 }
 
 export default function Home() {
+  const debug = false;
+
   return (
     <>
       <Head>
@@ -25,12 +28,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="bg-[#605e69] flex flex-col justify-center  items-center w-screen h-screen">
-        <PieChart testData={testData} />
-        <main className="bg-[#09051b] grid grid-rows-6 grid-flow-col gap-4 justify-center  items-center w-screen h-screen">
-          {testData.map((testItem, i) => (
-            <FinanceCard key={i} finItem={testItem} />
-          ))}
-        </main>
+        <PieChart testData={testDataSummarised} />
+        {debug && (
+          <main className="bg-[#09051b] grid grid-rows-6 grid-flow-col gap-4 justify-center  items-center w-screen h-screen">
+            {testData.map((testItem, i) => (
+              <FinanceCard key={i} finItem={testItem} />
+            ))}
+          </main>
+        )}
       </div>
     </>
   );
