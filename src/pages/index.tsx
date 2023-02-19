@@ -28,7 +28,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="bg-[#241e2b] flex flex-col justify-center  items-center w-screen h-screen">
-        <div className="absolute top-[100px]">
+        <div className="absolute top-[50px]">
           <p className="text-[3rem] font-light">Expense Explorer</p>
           <p className="text-base font-light">By Aldrin Gordon</p>
         </div>
