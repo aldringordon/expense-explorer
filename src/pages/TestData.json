@@ -3,119 +3,119 @@
         "Name": "Salary",
         "Type": "Income",
         "Subtype": "Salary",
-        "Amount (AUD)": 2320,
+        "Amount": 2320,
         "Frequency": "Fortnightly"
     },
     {
         "Name": "Rent",
         "Type": "Expense",
         "Subtype": "Rent",
-        "Amount (AUD)": 170,
+        "Amount": 170,
         "Frequency": "Weekly"
     },
     {
         "Name": "RAC",
         "Type": "Expense",
         "Subtype": "Insurance",
-        "Amount (AUD)": 50,
+        "Amount": 50,
         "Frequency": "Monthly"
     },
     {
         "Name": "SWAN",
         "Type": "Expense",
         "Subtype": "Insurance",
-        "Amount (AUD)": 30,
+        "Amount": 30,
         "Frequency": "Monthly"
     },
     {
         "Name": "CBHS",
         "Type": "Expense",
         "Subtype": "Insurance",
-        "Amount (AUD)": 55,
+        "Amount": 55,
         "Frequency": "Weekly"
     },
     {
         "Name": "Car",
         "Type": "Expense",
         "Subtype": "Registration",
-        "Amount (AUD)": 80,
+        "Amount": 80,
         "Frequency": "Monthly"
     },
     {
         "Name": "Bike",
         "Type": "Expense",
         "Subtype": "Registration",
-        "Amount (AUD)": 40,
+        "Amount": 40,
         "Frequency": "Monthly"
     },
     {
         "Name": "Power",
         "Type": "Expense",
         "Subtype": "Utility",
-        "Amount (AUD)": 40,
+        "Amount": 40,
         "Frequency": "Monthly"
     },
     {
         "Name": "Water",
         "Type": "Expense",
         "Subtype": "Utility",
-        "Amount (AUD)": 10,
+        "Amount": 10,
         "Frequency": "Monthly"
     },
     {
         "Name": "Phone",
         "Type": "Expense",
         "Subtype": "Utility",
-        "Amount (AUD)": 58,
+        "Amount": 58,
         "Frequency": "Monthly"
     },
     {
         "Name": "Internet",
         "Type": "Expense",
         "Subtype": "Utility",
-        "Amount (AUD)": 28,
+        "Amount": 28,
         "Frequency": "Monthly"
     },
     {
         "Name": "Food",
         "Type": "Expense",
         "Subtype": "Food",
-        "Amount (AUD)": 150,
+        "Amount": 150,
         "Frequency": "Weekly"
     },
     {
         "Name": "Petrol",
         "Type": "Expense",
         "Subtype": "Petrol",
-        "Amount (AUD)": 100,
+        "Amount": 100,
         "Frequency": "Weekly"
     },
     {
         "Name": "Subscriptions",
         "Type": "Expense",
         "Subtype": "Subscriptions",
-        "Amount (AUD)": 100,
+        "Amount": 100,
         "Frequency": "Monthly"
     },
     {
         "Name": "Transperth",
         "Type": "Expense",
         "Subtype": "Utility",
-        "Amount (AUD)": 20,
+        "Amount": 20,
         "Frequency": "Monthly"
     },
     {
         "Name": "DFAT",
         "Type": "Liability",
         "Subtype": "Loan",
-        "Amount (AUD)": 100,
+        "Amount": 100,
         "Frequency": "Fortnightly"
     },
     {
         "Name": "PL",
         "Type": "Liability",
         "Subtype": "Loan",
-        "Amount (AUD)": 173.26,
+        "Amount": 173.26,
         "Frequency": "Fortnightly"
     }
 ]

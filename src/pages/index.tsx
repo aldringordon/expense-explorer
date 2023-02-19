@@ -2,13 +2,23 @@ import styles from "@/styles/Home.module.css";
 import { Inter } from "@next/font/google";
 import Head from "next/head";
 import Image from "next/image";
+import FinanceCard from "./FinanceCard";
 
 import testData from "./TestData.json";
 
-const inter = Inter({ subsets: ["latin"] });
+interface finItem {
+  Name: string;
+  Type: string;
+  Subtype: string;
+  Amount: number;
+  Frequency: string;
+}
 
 export default function Home() {
-  console.log(testData);
+  testData.forEach((item) => {
+    console.log(item);
+    console.log("-----");
+  });
 
   return (
     <>
@@ -18,8 +28,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <main className="bg-[#09051b] flex-col justify-center flex items-center w-screen h-screen space-y-4">
+        {testData.map((testData, i) => (
+          <FinanceCard key={i} finItem={testData} />
+        ))}
       </main>
     </>
   );
