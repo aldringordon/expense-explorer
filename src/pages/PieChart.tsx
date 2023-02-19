@@ -34,7 +34,6 @@ function PieChart(props: any) {
         modifiers: [["darker", 2]],
       }}
       tooltip={(input) => {
-        console.log(input);
         return <FinanceSummaryCard finItem={input.datum.data} />;
       }}
       defs={[
