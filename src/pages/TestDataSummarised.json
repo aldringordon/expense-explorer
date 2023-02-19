@@ -1,14 +1,14 @@
 [
     {
-        "Type": "Income",
-        "Amount": 4640
+        "Type": "Available",
+        "Amount": 2710
     },
     {
-        "Type": "Expense",
+        "Type": "Expenses",
         "Amount": 1338.33
     },
     {
-        "Type": "Liability",
+        "Type": "Liabilities",
         "Amount": 591.67
     }
 ]

@@ -27,8 +27,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="bg-[#605e69] flex flex-col justify-center  items-center w-screen h-screen">
-        <PieChart testData={testDataSummarised} />
+      <div className="bg-[#241e2b] flex flex-col justify-center  items-center w-screen h-screen">
+        <div className="flex flex-col justify-center  items-center w-[700px] h-[650px]">
+          <PieChart testData={testDataSummarised} />
+        </div>
         {debug && (
           <main className="bg-[#09051b] grid grid-rows-6 grid-flow-col gap-4 justify-center  items-center w-screen h-screen">
             {testData.map((testItem, i) => (

@@ -1,20 +1,35 @@
 import { ResponsivePie } from "@nivo/pie";
+import { useState } from "react";
 import FinanceSummaryCard from "./FinanceSummaryCard";
 
 function PieChart(props: any) {
+  var totalSum = 0;
+
   const testData = props.testData;
   testData.forEach((item: any) => {
-    console.log(item);
-    console.log("#########");
+    totalSum += item.Amount;
   });
+
+  const theme = {
+    axis: {
+      textColor: "#eee",
+      fontSize: "14px",
+      tickColor: "#eee",
+    },
+    grid: {
+      stroke: "#888",
+      strokeWidth: 1,
+    },
+  };
+
   return (
     <ResponsivePie
       data={testData}
       id="Type"
       value="Amount"
-      valueFormat={" >-$.2r"}
+      valueFormat={" >-$"}
       colors={{ scheme: "accent" }}
-      margin={{ top: 40, right: 80, bottom: 80, left: 80 }}
+      margin={{ top: 60, right: 110, bottom: 80, left: 110 }}
       innerRadius={0.5}
       padAngle={0.7}
       cornerRadius={3}
@@ -25,7 +40,7 @@ function PieChart(props: any) {
         modifiers: [["darker", 0.2]],
       }}
       arcLinkLabelsSkipAngle={10}
-      arcLinkLabelsTextColor="#333333"
+      arcLinkLabelsTextColor="#f4f4f5"
       arcLinkLabelsThickness={2}
       arcLinkLabelsColor={{ from: "color" }}
       arcLabelsSkipAngle={10}
@@ -34,7 +49,9 @@ function PieChart(props: any) {
         modifiers: [["darker", 2]],
       }}
       tooltip={(input) => {
-        return <FinanceSummaryCard finItem={input.datum.data} />;
+        return (
+          <FinanceSummaryCard finItem={input.datum.data} salarySum={totalSum} />
+        );
       }}
       defs={[
         {
@@ -89,7 +106,7 @@ function PieChart(props: any) {
             {
               on: "hover",
               style: {
-                itemTextColor: "#000",
+                itemTextColor: "#f4f4f5",
               },
             },
           ],
